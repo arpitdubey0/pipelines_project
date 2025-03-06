@@ -5,6 +5,9 @@ FROM openjdk:17
 WORKDIR /app
 
 # Copy all Java source files to the container
-COPY myapp.jar myapp.jar
+#COPY myapp.jar myapp.jar
 
-CMD ["java", "-jar", "myapp.jar"]
+#CMD ["java", "-jar", "myapp.jar"]
+
+COPY ["java", "Main"]
+
