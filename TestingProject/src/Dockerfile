@@ -9,5 +9,13 @@ WORKDIR /app
 
 #CMD ["java", "-jar", "myapp.jar"]
 
-CMD ["java", "TestingProject/bin/com/nishkaiv/TestingClass.java"]
+#CMD ["java", "TestingProject/bin/com/nishkaiv/TestingClass.java"]
+
+COPY TestingProject/src/*.jar myapp.jar
+
+# Expose the application port (change this if your app uses a different port)
+EXPOSE 8080
+
+# Run the application
+CMD ["java", "-jar", "myapp.jar"]
 
