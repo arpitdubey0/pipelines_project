@@ -5,10 +5,6 @@ FROM openjdk:17
 WORKDIR /app
 
 # Copy all Java source files to the container
-COPY . .
+COPY myapp.jar myapp.jar
 
-# Compile Java files inside the correct directory
-RUN javac com/nishkaiv/TestingClass.java
-
-# Specify the command to run the Java application
-CMD ["java", "com.nishkaiv.TestingClass"]
+CMD ["java", "-jar", "myapp.jar"]
