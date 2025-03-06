@@ -10,7 +10,7 @@ WORKDIR /app
 #CMD ["java", "-jar", "myapp.jar"]
 
 #CMD ["java", "TestingProject/bin/com/nishkaiv/TestingClass.java"]
-
+ 
 COPY myapp.jar myapp.jar 
 
 # Expose the application port (change this if your app uses a different port)
