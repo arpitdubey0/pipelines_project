@@ -9,5 +9,5 @@ WORKDIR /app
 
 #CMD ["java", "-jar", "myapp.jar"]
 
-COPY ["java", "Main"]
+CMD ["java", "TestingClass"]
 
