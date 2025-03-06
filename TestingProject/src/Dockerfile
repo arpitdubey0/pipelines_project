@@ -8,7 +8,7 @@ WORKDIR /app
 COPY . /app
 
 # Compile Java files inside the container
-RUN javac Main.java
+RUN javac TestingClass.java
 
 # Specify the command to run the Java application
-CMD ["java", "Main"]
+CMD ["java", "TestingClass"]
