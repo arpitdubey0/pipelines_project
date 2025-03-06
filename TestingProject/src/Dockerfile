@@ -9,5 +9,5 @@ WORKDIR /app
 
 #CMD ["java", "-jar", "myapp.jar"]
 
-CMD ["java", "TestingProject/bin/com/nishkaiv/TestingClass"]
+CMD ["java", "TestingProject/bin/com/nishkaiv/TestingClass.java"]
 
